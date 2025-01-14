@@ -9,8 +9,7 @@ Burmese alphabet မြန်မာအက္ခရာ
 Thai script อักษรไทย
 
 Standard Sundanese script
- (*Aksara Sunda Baku*
-, ᮃᮊ᮪ᮞᮛ ᮞᮥᮔ᮪ᮓ ᮘᮊᮥ)
+ᮃᮊ᮪ᮞᮛ ᮞᮥᮔ᮪ᮓ ᮘᮊᮥ
 
 Zanabazar's square script
 
