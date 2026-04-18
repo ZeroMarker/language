@@ -32,6 +32,15 @@ jobs:
       MDBOOK_VERSION: 0.4.36
     steps:
       - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Generate SUMMARY.md
+        run: |
+          python generate_summary.py
+          echo "SUMMARY.md generated"
+          head -20 src/SUMMARY.md
       - name: Install mdBook
         run: |
           curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
