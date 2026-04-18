@@ -82,3 +82,5 @@ Desktop.ini
 .idea/
 *.sublime-*
 
+# honkit generated
+_book

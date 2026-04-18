@@ -1,1 +1,1 @@
-# this is thai
+# 输入法

@@ -1,0 +1,12 @@
+{
+  "root": ".",
+  "title": "语言学习笔记",
+  "author": "language learner",
+  "language": "zh",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  "gitbook": ">=3.0.0",
+  "honkit": ">=3.0.0"
+}

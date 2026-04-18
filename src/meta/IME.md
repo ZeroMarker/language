@@ -1,13 +1,15 @@
+# 输入法
+
 Alt + Shift, switch language
 
-# Gboard
+## Gboard
+
 Ctrl + Space, switch 中/a
 
 Shift
 
 
-- 键盘
-    - US-International
+## US-International
 
 [Help with Microsoft Keyboards US-International](https://slcr.wsu.edu/help-pages/microsoft-keyboards-us-international/)
 
@@ -17,13 +19,8 @@ Shift
 
 [IPA Chart](https://www.ipachart.com/)
 
-- 时间和语言
-    - 输入
-        - 键盘高级设置
-            - 输入语言热键
 
-
-```mermaid
+```sh
 mindmap
   root((Writing System))
     Phonographic
