@@ -1,0 +1,11 @@
+[book]
+authors = ["language learner"]
+language = "zh"
+src = "src"
+title = "语言学习笔记"
+
+
+
+[output.html]
+git-repository-url = "https://github.com/ZeroMarker/language"
+edit-url-template = "https://github.com/ZeroMarker/language/edit/main/{path}"

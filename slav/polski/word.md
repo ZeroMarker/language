@@ -1,1 +1,0 @@
-język polski，或polszczyzna

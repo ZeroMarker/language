@@ -1,0 +1,2 @@
+# 单词
+język polski，或polszczyzna
