@@ -25,8 +25,8 @@ This repo is for language learning.
 # 安装 mdBook
 cargo install mdbook
 
-# 安装自动生成 SUMMARY.md 的预处理器
-cargo install mdbook-autosummary
+# 安装 SUMMARY.md 生成工具
+cargo install mdbook-summarizer
 ```
 
 ### 构建和预览
@@ -41,37 +41,23 @@ mdbook serve --open
 
 ### 自动生成目录
 
-本项目使用 `mdbook-autosummary` 预处理器自动生成 `SUMMARY.md`。每次运行 `mdbook build` 或 `mdbook serve` 时，会自动扫描 `src/` 目录下的所有 Markdown 文件并更新目录。
+本项目使用 `mdbook-summarizer` 生成 `SUMMARY.md`。运行 `mdbook build` 或 `mdbook serve` 前，先执行 `mdbook-summarizer --src src`，它会扫描 `src/` 目录下的 Markdown 文件并更新目录。
 
 **重要说明**：
 - 每个需要被包含的文件夹**必须**包含一个 `README.md`（或其他指定的首页文件）
 - 每个 Markdown 文件最好以 `# 标题` 开头，否则会回退使用文件名作为目录显示文本
-- 首次运行前需要存在一个 `SUMMARY.md` 文件（可以为空），否则 mdBook 会构建失败
 
-手动创建空的 SUMMARY.md：
+生成 SUMMARY.md：
 
 ```powershell
-New-Item -Path "src\SUMMARY.md" -ItemType File
+mdbook-summarizer --src src
 ```
 
 ## 添加新笔记
 
 1. 在对应的语系目录下创建文件夹，并在文件夹中创建 `README.md` 作为入口（如 `sino/jp/grammar/README.md`）
 2. 确保文件以 `# 标题` 开头（这样自动生成目录时会使用首行作为链接文本）
-3. 运行 `mdbook build` 或 `mdbook serve`，目录会自动更新
-
-## 配置说明
-
-配置文件在 `book.toml` 中：
-
-```toml
-[build]
-create-missing = false
-
-[preprocessor.autosummary]
-index-name = "README.md"      # 文件夹首页文件名，默认为 index.md
-ignore-hidden = true          # 是否忽略以 . 或 _ 开头的文件
-```
+3. 运行 `mdbook-summarizer --src src` 更新目录，再运行 `mdbook build` 或 `mdbook serve`
 
 ## 部署到 GitHub Pages
 
@@ -101,7 +87,7 @@ ignore-hidden = true          # 是否忽略以 . 或 _ 开头的文件
 
 ```powershell
 # 生成 SUMMARY.md
-python generate_summary.py
+mdbook-summarizer --src src
 
 # 构建文档
 mdbook build

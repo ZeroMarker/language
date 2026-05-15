@@ -1,10 +1,11 @@
 mise use -g rust
 
 cargo install mdbook
+cargo install mdbook-summarizer
 
 mdbook init
 
-python generate_summary.py
+mdbook-summarizer --src src
 
 mdbook build
 
