@@ -1,1 +1,13 @@
-[日語文學選讀](https://www.youtube.com/watch?v=cmPH4vMMBxk)
+# 日语阅读材料
+
+本页收集适合阅读、听读和精读练习的日语材料。
+
+## 材料
+
+- [日語文學選讀](https://www.youtube.com/watch?v=cmPH4vMMBxk)
+
+## 记录建议
+
+- 标注材料来源、主题和难度
+- 摘出不熟悉的词语、惯用表达和语法结构
+- 为长句补充断句、直译和自然译文
