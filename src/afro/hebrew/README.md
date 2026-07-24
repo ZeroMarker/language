@@ -5,4 +5,5 @@
 ## 入门路线
 
 1. 先看[基础速查](basic.md)，熟悉文字和句型。
-2. 再用[词汇](vocabulary.md)积累高频表达。
+2. 用[日常会话](conversation.md)练习常见场景。
+3. 再用[词汇](vocabulary.md)积累高频表达。
