@@ -20,7 +20,7 @@ Shift
 [IPA Chart](https://www.ipachart.com/)
 
 
-```sh
+```text
 mindmap
   root((Writing System))
     Phonographic

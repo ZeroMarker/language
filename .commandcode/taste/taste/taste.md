@@ -1,0 +1,14 @@
+# Taste
+- CI/CD action configuration files (e.g., GitHub Actions YAML) should not be modified. Confidence: 0.9
+- Shell/build/deployment scripts should not be modified. Confidence: 0.9
+- After completing work, the agent should automatically commit and push changes. Confidence: 0.8
+- Chinese is the preferred language for project communication, documentation, and content (base language for multilingual material). Confidence: 0.9
+- Prefers brief, open-ended instructions and expects the agent to autonomously explore the project, identify gaps, and make decisions about what to improve. Confidence: 0.8
+- Proactive quality assurance is expected: systematically scan for content errors (garbled characters, broken markdown formatting, unescaped special characters in markup) and fix them without being asked for detailed steps. Confidence: 0.7
+- Factual accuracy in reference content is paramount: proactively verify and correct factual/categorical errors (language classification, terminology, spelling of examples) in addition to formatting issues. Confidence: 0.7
+- Maintain a formal, encyclopedic tone in reference documentation — remove emoji, conversational endings, and informal elements; content should be professional and reference-quality. Confidence: 0.7
+- Every markdown file should have a proper level-1 heading; normalize files that lack them during optimization passes. Confidence: 0.8
+- Eliminate content duplication: consolidate near-duplicate files (e.g., parallel verb/connective files) rather than maintaining redundant entries. Confidence: 0.7
+- After any batch of edits, run the project build tool to verify all changes compile correctly and nothing is broken. Confidence: 0.8
+- When adding new content sections to a reference project that has parallel entries across multiple languages/categories, apply the new content type **uniformly to all entries** with a consistent section structure. Confidence: 0.8
+- Trusts parallel/background agent execution for large batch operations (e.g., updating 24+ files simultaneously) without requiring per-file oversight. Confidence: 0.7

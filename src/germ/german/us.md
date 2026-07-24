@@ -1,3 +1,5 @@
+# 德语输入法
+
 1. Umlauts (Ä, Ö, Ü):
 Ä: Press Shift + " (double quotation mark) followed by A.
 Ö: Press Shift + " followed by O.
