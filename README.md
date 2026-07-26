@@ -21,27 +21,31 @@ This repo is for language learning.
 
 ### 安装依赖
 
-```powershell
+```bash
 # 安装 mdBook
-cargo install mdbook
+cargo install --locked mdbook
 
 # 安装 SUMMARY.md 生成工具
-cargo install mdbook-summarizer
+cargo install --locked mdbook-summarizer
 ```
 
 ### 构建和预览
 
-```powershell
+```bash
+# 生成目录
+mdbook-summarizer --src src
+
 # 构建文档
 mdbook build
 
 # 启动本地服务器并自动打开浏览器
+mdbook-summarizer --src src
 mdbook serve --open
 ```
 
 ### 自动生成目录
 
-本项目使用 `mdbook-summarizer` 生成 `SUMMARY.md`。运行 `mdbook build` 或 `mdbook serve` 前，先执行 `mdbook-summarizer --src src`，它会扫描 `src/` 目录下的 Markdown 文件并更新目录。
+本项目使用 `mdbook-summarizer` 生成 `SUMMARY.md`。运行 `mdbook build` 或 `mdbook serve` 前，需要先执行 `mdbook-summarizer --src src`。
 
 **重要说明**：
 - 每个需要被包含的文件夹**必须**包含一个 `README.md`（或其他指定的首页文件）
@@ -49,7 +53,7 @@ mdbook serve --open
 
 生成 SUMMARY.md：
 
-```powershell
+```bash
 mdbook-summarizer --src src
 ```
 
@@ -57,7 +61,7 @@ mdbook-summarizer --src src
 
 1. 在对应的语系目录下创建文件夹，并在文件夹中创建 `README.md` 作为入口（如 `sino/jp/grammar/README.md`）
 2. 确保文件以 `# 标题` 开头（这样自动生成目录时会使用首行作为链接文本）
-3. 运行 `mdbook-summarizer --src src` 更新目录，再运行 `mdbook build` 或 `mdbook serve`
+3. 运行 `mdbook-summarizer --src src` 更新目录，再运行 `mdbook build` 验证构建
 
 ## 部署到 GitHub Pages
 
@@ -67,7 +71,7 @@ mdbook-summarizer --src src
 
 1. 在 GitHub 仓库设置中，转到 "Pages" 部分
 2. 在 "Build and deployment" 中选择 "GitHub Actions"
-3. 工作流将自动部署到 `gh-pages` 分支
+3. 推送到 `main` 后，GitHub Actions 会构建并发布 Pages artifact；Pull Request 只执行构建检查，不会部署
 
 ### 自定义域名（可选）
 
@@ -85,13 +89,14 @@ mdbook-summarizer --src src
 
 ### 手动构建和预览
 
-```powershell
-# 生成 SUMMARY.md
+```bash
+# 生成目录
 mdbook-summarizer --src src
 
 # 构建文档
 mdbook build
 
 # 本地预览
+mdbook-summarizer --src src
 mdbook serve --open
 ```
