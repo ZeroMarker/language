@@ -26,7 +26,7 @@ This repo is for language learning.
 cargo install --locked mdbook
 
 # 安装 SUMMARY.md 生成工具
-cargo install --locked mdbook-summarizer
+cargo install --locked --version 0.1.0 mdbook-summarizer
 ```
 
 ### 构建和预览

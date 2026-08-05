@@ -1,3 +1,13 @@
-German quotation marks „“
+# 德语引号
 
-„No Kings“-Proteste
+德语使用**低-高引号**（Anführungszeichen）作为书面引号，与中文、英文的引号样式不同：
+
+- **外层引号**：„…"（起始符在下、结束符在上）
+- **内层引号**：‚…'（用于引号内再引用）
+
+示例：
+
+- „No Kings"-Proteste（"无国王"抗议活动）
+- Er sagte: „Sie sagte: ‚Hallo!'"
+
+注意：瑞士德语区使用法语式引号 «…»。
